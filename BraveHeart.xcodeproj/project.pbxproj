@@ -50,10 +50,6 @@
 		DBCE376219E9F82D00E382EC /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCE376119E9F82D00E382EC /* GameKit.framework */; };
 		DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE0BEA21A8B693D0010DC06 /* iAd.framework */; };
 		DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */; };
-		DBEA4FC81BC243D800000A55 /* LaunchBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC41BC243D800000A55 /* LaunchBackground.png */; };
-		DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC51BC243D800000A55 /* LaunchLogo.png */; };
-		DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */; };
-		DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */; };
 		DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */; };
 /* End PBXBuildFile section */
 
@@ -107,10 +103,6 @@
 		DBCE376119E9F82D00E382EC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		DBE0BEA21A8B693D0010DC06 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		DBEA4FC41BC243D800000A55 /* LaunchBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchBackground.png; sourceTree = "<group>"; };
-		DBEA4FC51BC243D800000A55 /* LaunchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchLogo.png; sourceTree = "<group>"; };
-		DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchLogo@2x.png"; sourceTree = "<group>"; };
-		DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchLogo@3x.png"; sourceTree = "<group>"; };
 		DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAdsAddon.m; sourceTree = "<group>"; };
 		DBF0F5A81A3D0B78007693C1 /* iAdsAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAdsAddon.h; sourceTree = "<group>"; };
 		DBF44365170F00F20026A109 /* CodeaAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeaAddon.h; sourceTree = "<group>"; };
@@ -251,10 +243,6 @@
 				DB8A00A116F2E859005F87A6 /* SourceSansPro-Bold.otf */,
 				DB8A00A216F2E859005F87A6 /* SourceSansPro-Regular.otf */,
 				DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */,
-				DBEA4FC41BC243D800000A55 /* LaunchBackground.png */,
-				DBEA4FC51BC243D800000A55 /* LaunchLogo.png */,
-				DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */,
-				DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -352,15 +340,11 @@
 			files = (
 				DB8A005116F2DBDA005F87A6 /* InfoPlist.strings in Resources */,
 				DB8A006B16F2E019005F87A6 /* RuntimeResources.bundle in Resources */,
-				DBEA4FC81BC243D800000A55 /* LaunchBackground.png in Resources */,
-				DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */,
 				DB8A006C16F2E019005F87A6 /* ToolsResources.bundle in Resources */,
 				DB8A00A416F2E859005F87A6 /* Inconsolata.otf in Resources */,
 				CFB053401F3E3061006E00AE /* Images.xcassets in Resources */,
 				DB8A00A516F2E859005F87A6 /* SourceSansPro-Bold.otf in Resources */,
-				DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */,
 				DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */,
-				DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */,
 				DB6F5AB81E9287F4003CDC92 /* Assets in Resources */,
 				DB8A00A616F2E859005F87A6 /* SourceSansPro-Regular.otf in Resources */,
 				DB8A00A716F2E859005F87A6 /* SourceSansPro-Semibold.otf in Resources */,
