@@ -10,5 +10,5 @@
 
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
-    #import <Foundatio/Users/romankoshelev/Desktop/BraveHeart/BraveHeart/Lua/lua.hn/Foundation.h>
+//    #import <Foundation/Users/romankoshelev/prj/BraveHeart/BraveHeart/Lua/lua.h/Foundation.h>
 #endif
