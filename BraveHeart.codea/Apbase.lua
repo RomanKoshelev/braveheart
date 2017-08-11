@@ -41,7 +41,7 @@ end
 --------------------
 
 function Appbase:initDisplay()
-    displayMode          (FULLSCREEN_NO_BUTTONS)
+    -- displayMode          (FULLSCREEN_NO_BUTTONS)
     backingMode          (RETAINED)
     supportedOrientations(PORTRAIT_ANY)
 end

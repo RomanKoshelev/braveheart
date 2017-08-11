@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFB053401F3E3061006E00AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0DC0AD18C459EC005F4723 /* Images.xcassets */; };
 		DB0DC0B618C46085005F4723 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B518C46085005F4723 /* CoreImage.framework */; };
 		DB0DC0B818C4608A005F4723 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B718C4608A005F4723 /* CoreLocation.framework */; };
 		DB0DC0BA18C4608E005F4723 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B918C4608E005F4723 /* Accelerate.framework */; };
@@ -355,6 +356,7 @@
 				DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */,
 				DB8A006C16F2E019005F87A6 /* ToolsResources.bundle in Resources */,
 				DB8A00A416F2E859005F87A6 /* Inconsolata.otf in Resources */,
+				CFB053401F3E3061006E00AE /* Images.xcassets in Resources */,
 				DB8A00A516F2E859005F87A6 /* SourceSansPro-Bold.otf in Resources */,
 				DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */,
 				DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */,

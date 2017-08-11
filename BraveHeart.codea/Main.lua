@@ -24,6 +24,8 @@ Main.Config.Domain      = "pgs"
 
 local app
 
+displayMode (FULLSCREEN_NO_BUTTONS)
+
 function setup()
     app=App(
         Main.Config.Name,
