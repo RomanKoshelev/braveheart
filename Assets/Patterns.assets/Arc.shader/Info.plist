@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bindings</key>
+	<dict>
+		<key>a1</key>
+		<string>math.pi * math.sin(ElapsedTime/5)</string>
+		<key>a2</key>
+		<string>math.pi * math.sin(ElapsedTime/7)</string>
+		<key>color</key>
+		<string>vec4(ElapsedTime/11%1, ElapsedTime/5%1, ElapsedTime/7%1, 1)</string>
+		<key>modelViewProjection</key>
+		<string>modelMatrix() * viewMatrix() * projectionMatrix()</string>
+		<key>size</key>
+		<string>0.24 * math.sin(ElapsedTime/11) + 0.24</string>
+	</dict>
+</dict>
+</plist>

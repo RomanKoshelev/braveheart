@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Papa's games studio</string>
+	<key>Buffer Order</key>
+	<array>
+		<string>Braveheart</string>
+		<string>Calc</string>
+		<string>Canvas</string>
+		<string>Color</string>
+		<string>Events</string>
+		<string>Framerate</string>
+		<string>Pack</string>
+		<string>Game</string>
+		<string>Plotter</string>
+		<string>Scheme</string>
+		<string>DragonBase</string>
+		<string>Dragon</string>
+		<string>Gun</string>
+		<string>Shot</string>
+		<string>Sky</string>
+		<string>Star</string>
+		<string>Heart</string>
+		<string>Stage</string>
+		<string>ADragon</string>
+		<string>AGun</string>
+		<string>AShot</string>
+		<string>ASky</string>
+		<string>AStar</string>
+		<string>AHeart</string>
+		<string>Person</string>
+		<string>Actor</string>
+		<string>Sys</string>
+		<string>Toucher</string>
+		<string>UI</string>
+		<string>Timer</string>
+		<string>Apbase</string>
+		<string>Appapi</string>
+		<string>App</string>
+		<string>Main</string>
+	</array>
+	<key>Created</key>
+	<string>2014-07-02 14:19:24 +0000</string>
+	<key>Dependencies</key>
+	<array>
+		<string>lib</string>
+	</array>
+	<key>Description</key>
+	<string>Help the Heart fight the Dragons</string>
+	<key>Icon</key>
+	<string>Icon.png</string>
+	<key>Since</key>
+	<string>1 September 2012</string>
+	<key>Version</key>
+	<real>1</real>
+</dict>
+</plist>
