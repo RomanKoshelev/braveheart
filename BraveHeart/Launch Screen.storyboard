@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,39 +18,47 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="FyW-kY-xMa">
-                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7B-Eb-v8Y">
-                                <rect key="frame" x="46" y="305" width="283" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="343" id="SGw-Db-bqu"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="sr8-lX-UsK">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                        </accessibility>
                         <constraints>
-                            <constraint firstItem="FyW-kY-xMa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="0eT-Yb-5Q7"/>
-                            <constraint firstItem="P7B-Eb-v8Y" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6uO-K0-W2a"/>
-                            <constraint firstItem="FyW-kY-xMa" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="BEM-wH-Pzy"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="P7B-Eb-v8Y" secondAttribute="trailing" constant="30" id="Bcs-Wa-17U"/>
-                            <constraint firstItem="P7B-Eb-v8Y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="Htj-tt-3gu"/>
-                            <constraint firstItem="P7B-Eb-v8Y" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="NUC-dB-VFh"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="FyW-kY-xMa" secondAttribute="bottom" id="ewj-rf-TeT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FyW-kY-xMa" secondAttribute="trailing" constant="-20" id="woc-jx-MO6"/>
+                            <constraint firstItem="sr8-lX-UsK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Hoq-Cw-r0X"/>
+                            <constraint firstItem="sr8-lX-UsK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="e7O-Zl-ZEZ"/>
+                            <constraint firstItem="sr8-lX-UsK" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="fC2-11-sUv"/>
+                            <constraint firstAttribute="trailing" secondItem="sr8-lX-UsK" secondAttribute="trailing" id="mDL-Li-oJ1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Hoq-Cw-r0X"/>
+                                <exclude reference="e7O-Zl-ZEZ"/>
+                                <exclude reference="fC2-11-sUv"/>
+                                <exclude reference="mDL-Li-oJ1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Hoq-Cw-r0X"/>
+                                <include reference="e7O-Zl-ZEZ"/>
+                                <include reference="fC2-11-sUv"/>
+                                <include reference="mDL-Li-oJ1"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="49.194729136163978" y="363.8671875"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchBackground.png" width="128" height="128"/>
-        <image name="LaunchLogo.png" width="343" height="57"/>
+        <image name="LaunchImage" width="16" height="16"/>
     </resources>
 </document>
