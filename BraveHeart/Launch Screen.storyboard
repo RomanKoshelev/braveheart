@@ -6,59 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="sr8-lX-UsK">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                        </accessibility>
-                        <constraints>
-                            <constraint firstItem="sr8-lX-UsK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Hoq-Cw-r0X"/>
-                            <constraint firstItem="sr8-lX-UsK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="e7O-Zl-ZEZ"/>
-                            <constraint firstItem="sr8-lX-UsK" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="fC2-11-sUv"/>
-                            <constraint firstAttribute="trailing" secondItem="sr8-lX-UsK" secondAttribute="trailing" id="mDL-Li-oJ1"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Hoq-Cw-r0X"/>
-                                <exclude reference="e7O-Zl-ZEZ"/>
-                                <exclude reference="fC2-11-sUv"/>
-                                <exclude reference="mDL-Li-oJ1"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="Hoq-Cw-r0X"/>
-                                <include reference="e7O-Zl-ZEZ"/>
-                                <include reference="fC2-11-sUv"/>
-                                <include reference="mDL-Li-oJ1"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="49.194729136163978" y="363.8671875"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="LaunchImage" width="16" height="16"/>
-    </resources>
 </document>
