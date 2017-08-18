@@ -15,7 +15,7 @@ Stage -- used for representation of game's proceses
 Stage.Config                  = {}
 Stage.Config.Landscape        = "Documents:sky2"
 Stage.Config.BestShotSound    = "Game Sounds One:Crowd Cheer"
-Stage.Config.HorizontY        = 180
+Stage.Config.HorizontY        = math.max(WIDTH,HEIGHT) / 1024 * 180
 
 ------------------------------------------------------------------------------------------
 -- api

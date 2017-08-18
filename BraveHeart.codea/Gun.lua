@@ -175,7 +175,7 @@ function Gun:activateShotIfPossible(x,y)
 end
 
 function Gun:shotMode()
-   -- return Shot.Mode.Ballistic
+    -- return Shot.Mode.Ballistic
     return self.mode == Gun.Mode.Hunting and Shot.Mode.Ballistic or Shot.Mode.Straight
 end 
 

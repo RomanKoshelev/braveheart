@@ -58,16 +58,17 @@ function UI:doOnTick()
 end
 
 function UI:doOnDraw()
+    k = math.min(1, math.min(WIDTH, HEIGHT) / 600)
     p = self.oldHeartAnimProgress or 1
-    w = 25
-    d = w+4
+    w = 25*k
+    d = w+4*k
     h = w
-    x = d * (1-p)
-    y = HEIGHT - h - 2
-    s = -10
+    x = d * (1-p) * k
+    y = (HEIGHT - h - 2*k)
+    s = -10 * k
     for i = 1,self.heartNum do
-        s = s + ((i-1)%5==0 and 15 or -10)
-        dy = -(i*(i+1)%7)*2
+        s = s + ((i-1)%5==0 and 15 or -10) * k
+        dy = -(i*(i+1)%7)*2 * k
         if i== self.heartNum then
             self:drawLastHeart(x+s+(i-1)*d, y+dy, w, h)
         else
