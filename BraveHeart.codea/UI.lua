@@ -101,11 +101,9 @@ end
 function UI:drawFreePanel()
     pushStyle()
     pushMatrix()
-    
         fill(color(0,0,0,200))
         noStroke()
         rect(-1,-1,WIDTH+10, 40)
-  
     popMatrix()
     popStyle()
 end
@@ -113,15 +111,15 @@ end
 function UI:drawShotNum()
     pushStyle()
     pushMatrix()
-    local s = string.format("shots: %3d",self.shotNum)
-    font("AmericanTypewriter")
-    fontSize(20)
-    fill(color(177, 175, 32, 255))
-    textMode(CORNER)
-    local w,h = textSize("1")
-    local x = 6
-    local y = 6
-    text(s,x,y)
+        local s = string.format("shots left: %3d", Scheme.Config.MaxFreeShotNum - self.shotNum)
+        font("AmericanTypewriter")
+        fontSize(20)
+        fill(color(177, 175, 32, 255))
+        textMode(CORNER)
+        local w,h = textSize("1")
+        local x = 6
+        local y = 6
+        text(s,x,y)
     popMatrix()
     popStyle()
 end

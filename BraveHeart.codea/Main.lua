@@ -17,6 +17,7 @@ Main.Config             = {}
 Main.Config.Name        = "Brave Heart"
 Main.Config.Description = "Help the Heart fight the Dragons"
 Main.Config.Domain      = "pgs"
+Main.Config.FullVersion = false
 
 ------------------------------------------------------------------------------------------
 -- main

@@ -36,6 +36,10 @@ Scheme.Config.MaxHeartNum                  = 25 --25
 Scheme.Config.Mode                         = Scheme.Mode.Hunting
 Scheme.Config.DefenceModeProbability       = 0.5
 Scheme.Config.Complexity                   = 0.0
+Scheme.Config.MaxFreeShotNum               = 100
+Scheme.Config.FreeShotBufferSize           = 10
+Scheme.Config.AddFreeShotAfterSec          = 3
+
 
 ------------------------------------------------------------------------------------------
 -- api
@@ -126,13 +130,44 @@ function Scheme:doOnTick()
     self:checkDragonShotStrike  ()
     self.sky:canUpdateStars     (not self.dragon:isStricken())
     self.heart:canUpdateIncrease(not self.dragon:isStricken())
+    self:updateFreeShotNum()
+    self:calcCanFire()
     Events.trigger(self.heartNumEvent,   self.heartNum)
     Events.trigger(self.shotNumEvent,    self.shotNum)
+    Events.trigger(Game.Config.Events.CanFire, self.canFire)
+end
+
+function Scheme:updateFreeShotNum()
+    if Main.Config.FullVersion then
+        return
+    end
+    local minAdditionShot = Scheme.Config.MaxFreeShotNum - Scheme.Config.FreeShotBufferSize
+    if self.shotNum < minAdditionShot then
+        return
+    end
+    local duration = ElapsedTime - (self.prevFreeShotUpdate or 0)
+    if  duration > Scheme.Config.AddFreeShotAfterSec then
+        self.prevFreeShotUpdate = ElapsedTime
+        self.shotNum = math.max(self.shotNum - 1, minAdditionShot)
+    end
+
+end
+
+function Scheme:calcCanFire()
+    if Main.Config.FullVersion then
+        self.canFire = true
+    else
+        self.canFire = self.shotNum < Scheme.Config.MaxFreeShotNum
+    end
 end
 
 function Scheme:doOnShot()
     self.shotNum = self.shotNum + 1
+    if not Main.Config.FullVersion then
+        self.shotNum = math.min(self.shotNum, Scheme.Config.MaxFreeShotNum)
+    end
     Events.trigger(self.shotNumEvent, self.shotNum)
+    Events.trigger(Game.Config.Events.CanFire, self.canFire)
     self:saveShotNum ()
 end
 
@@ -196,6 +231,7 @@ function Scheme:initConfig()
     self.iniHeartNum              = Scheme.Config.IniHeartNum
     self.maxHeartNum              = Scheme.Config.MaxHeartNum
     self.maxEasyShotNum           = Scheme.Config.MaxEasyShotNum
+    self.freeShotNum              = Scheme.Config.MaxFreeShotNum
     self.mode                     = Scheme.Config.Mode
     self.complexity               = Scheme.Config.Complexity
     self.defenceModeProbability   = Scheme.Config.DefenceModeProbability
@@ -211,6 +247,7 @@ function Scheme:initAttributes()
     self.complexity = self:calcComplexity()
     self.curReward  = 0
     self.lastReward = 0
+    self.canFire    = true
 end
 
 function Scheme:createElements()

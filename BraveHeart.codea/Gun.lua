@@ -72,6 +72,7 @@ function Gun:doInit(mode)
     self:initConfig    ()
     self:initAttributes(mode)
     self:createElements()
+    Events.bind(Game.Config.Events.CanFire, self, Gun.onCanFire)
 end
 
 function Gun:doUpdate()
@@ -81,7 +82,11 @@ end
 
 function Gun:doFire(x,y)
     if self:isCharged() then
-        self:activateShotIfPossible(x,y) 
+        if self.canFire then
+            self:activateShotIfPossible(x,y)
+        else
+            -- sound("Sounds:gun-trigger-click-01")
+        end
     end
 end
 
@@ -105,6 +110,11 @@ function Gun:doStopAll()
     end   
 end
 
+function Gun:onCanFire(canFire)
+    self.canFire = canFire
+end
+
+
 ------------------------------------------------------------------------------------------
 -- utils
 ------------------------------------------------------------------------------------------
@@ -122,6 +132,7 @@ end
 
 function Gun:initAttributes(mode)
     self.mode           = mode or self.mode
+    self.canFire        = true
 end
 
 --------------------
@@ -189,6 +200,7 @@ function Gun:isCharged()
         self.prevShotAttempt = self:time()
         return true
     end
+    return false
 end
 
 ------------------------------------------------------------------------------------------
