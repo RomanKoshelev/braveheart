@@ -13,9 +13,6 @@ UI -- user interface
 --------------------
 
 UI.Config = {}
-UI.Config.Font       = "AmericanTypewriter"
-UI.Config.FontSize   = 18
-UI.Config.Color      = color(177, 175, 32, 255)
 
 ------------------------------------------------------------------------------------------
 -- api
@@ -66,6 +63,7 @@ end
 
 function UI:doOnDraw()
     self:drawHearts()
+    self:drawFreePanel()
     self:drawShotNum()
 end
 
@@ -100,17 +98,29 @@ function UI:drawLastHeart(x2,y2,w2,h2)
     sprite("Small World:Heart Glow", x, y, w, h)
 end
 
+function UI:drawFreePanel()
+    pushStyle()
+    pushMatrix()
+    
+        fill(color(0,0,0,200))
+        noStroke()
+        rect(-1,-1,WIDTH+10, 40)
+  
+    popMatrix()
+    popStyle()
+end
+
 function UI:drawShotNum()
     pushStyle()
     pushMatrix()
-    local s = string.format("shots:%3d",self.shotNum)
-    font(self.font)
-    fontSize(self.fontSize)
-    fill(self.color)
+    local s = string.format("shots: %3d",self.shotNum)
+    font("AmericanTypewriter")
+    fontSize(20)
+    fill(color(177, 175, 32, 255))
     textMode(CORNER)
     local w,h = textSize("1")
-    local x = self.fontSize/2
-    local y = self.fontSize/10
+    local x = 6
+    local y = 6
     text(s,x,y)
     popMatrix()
     popStyle()
@@ -142,10 +152,6 @@ function UI:initAttributes()
     self.newHeartY = 0
     self.newHeartAnimProgress = 1.
     self.oldHeartAnimProgress = 1.
-    self.font     = UI.Config.Font
-    self.fontSize = UI.Config.FontSize
-    self.color    = UI.Config.Color
-
 end
 
 
