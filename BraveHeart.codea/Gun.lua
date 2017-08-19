@@ -85,7 +85,7 @@ function Gun:doFire(x,y)
         if self.canFire then
             self:activateShotIfPossible(x,y)
         else
-            -- sound("Sounds:gun-trigger-click-01")
+            sound("Game Sounds One:Radar")
         end
     end
 end

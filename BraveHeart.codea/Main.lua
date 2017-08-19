@@ -25,7 +25,7 @@ Main.Config.FullVersion = false
 
 local app
 
--- displayMode (FULLSCREEN_NO_BUTTONS)
+displayMode (FULLSCREEN_NO_BUTTONS)
 
 function setup()
     app=App(

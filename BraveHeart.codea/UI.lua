@@ -63,8 +63,11 @@ end
 
 function UI:doOnDraw()
     self:drawHearts()
-    self:drawFreePanel()
-    self:drawShotNum()
+    if not Main.Config.FullVersion then
+        self:drawBuyButton()
+        -- self:drawFreePanel()
+        -- self:drawShotNum()
+    end
 end
 
 function UI:drawHearts()
@@ -98,6 +101,38 @@ function UI:drawLastHeart(x2,y2,w2,h2)
     sprite("Small World:Heart Glow", x, y, w, h)
 end
 
+
+function UI:drawBuyButton()
+    bc = color(0,0,0,120)
+    tc = color(200, 200, 200, 120)
+    if self.shotNum == Scheme.Config.MaxFreeShotNum then
+        bc = color(250,0,0,220)
+        tc = color(255, 255, 0, 220)
+    elseif Scheme.Config.FreeShotBufferSize + self.shotNum > Scheme.Config.MaxFreeShotNum + 2 then
+        bc = color(250,250,0,180)
+        tc = color(255, 0, 0, 180)
+    end
+    pushStyle()
+    pushMatrix()
+        s = "BUY FULL VERSION"
+        w = 240
+        h = 40
+        b = 5
+        x = b -- WIDTH-w-b
+        y = b -- HEIGHT-h-b
+        fill(bc)
+        noStroke()
+        rect(x, y, w, h)
+        textMode(CORNER)
+        font("SourceSansPro-Bold")
+        fontSize(25)
+        fill(tc)
+        tw, th = textSize(s)
+        text(s, x+(w-tw)/2, y+(h-th)/2)
+    popMatrix()
+    popStyle()
+end
+
 function UI:drawFreePanel()
     pushStyle()
     pushMatrix()
@@ -116,7 +151,6 @@ function UI:drawShotNum()
         fontSize(20)
         fill(color(177, 175, 32, 255))
         textMode(CORNER)
-        local w,h = textSize("1")
         local x = 6
         local y = 6
         text(s,x,y)
