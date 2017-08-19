@@ -12,7 +12,10 @@ UI -- user interface
 -- config
 --------------------
 
-UI.Config                          = {}
+UI.Config = {}
+UI.Config.Font       = "AmericanTypewriter"
+UI.Config.FontSize   = 18
+UI.Config.Color      = color(177, 175, 32, 255)
 
 ------------------------------------------------------------------------------------------
 -- api
@@ -35,12 +38,16 @@ function UI:onDraw
 ------------------------------------------------------------------------------------------
 
 function UI:bindEvents()
-    Events.bind(Game.Config.Events.HeartNum,    self, UI.onHeartNum)
+    Events.bind(Game.Config.Events.HeartNum, self, UI.onHeartNum)
+    Events.bind(Game.Config.Events.ShotNum, self, UI.onShotNum)
 end
 
 
 function UI:onHeartNum(...)
     self:doOnHeartNum(unpack({...}))
+end
+function UI:onShotNum(...)
+    self:doOnShotNum(unpack({...}))
 end
 
 ------------------------------------------------------------------------------------------
@@ -58,6 +65,11 @@ function UI:doOnTick()
 end
 
 function UI:doOnDraw()
+    self:drawHearts()
+    self:drawShotNum()
+end
+
+function UI:drawHearts()
     k = math.min(1, math.min(WIDTH, HEIGHT) / 600)
     p = self.oldHeartAnimProgress or 1
     w = 25*k
@@ -71,7 +83,7 @@ function UI:doOnDraw()
         dy = -(i*(i+1)%7)*2 * k
         if i== self.heartNum then
             self:drawLastHeart(x+s+(i-1)*d, y+dy, w, h)
-        else
+            else
             sprite("Small World:Heart Glow", x+s+(i-1)*d, y+dy, w, h)
         end
     end
@@ -88,15 +100,35 @@ function UI:drawLastHeart(x2,y2,w2,h2)
     sprite("Small World:Heart Glow", x, y, w, h)
 end
 
+function UI:drawShotNum()
+    pushStyle()
+    pushMatrix()
+    local s = string.format("shots:%3d",self.shotNum)
+    font(self.font)
+    fontSize(self.fontSize)
+    fill(self.color)
+    textMode(CORNER)
+    local w,h = textSize("1")
+    local x = self.fontSize/2
+    local y = self.fontSize/10
+    text(s,x,y)
+    popMatrix()
+    popStyle()
+end
+
 function UI:doOnHeartNum(hn, x, y)
     if hn > self.heartNum then
         self.newHeartX = x
-        self.newHeartY = y        
+        self.newHeartY = y
         self.newHeartAnimProgress = .01
-    elseif hn < self.heartNum then
+        elseif hn < self.heartNum then
         self.oldHeartAnimProgress = .01
     end
     self.heartNum = hn
+end
+
+function UI:doOnShotNum(sn)
+    self.shotNum = sn
 end
 
 ------------------------------------------------------------------------------------------
@@ -104,11 +136,16 @@ end
 ------------------------------------------------------------------------------------------
 
 function UI:initAttributes()
+    self.shotNum = 0
     self.heartNum = 0
     self.newHeartX = 0
     self.newHeartY = 0
     self.newHeartAnimProgress = 1.
     self.oldHeartAnimProgress = 1.
+    self.font     = UI.Config.Font
+    self.fontSize = UI.Config.FontSize
+    self.color    = UI.Config.Color
+
 end
 
 

@@ -137,7 +137,7 @@ function Shot:initConfig()
     self.minRadius          = Shot.Config.MinRadius
     self.maxRadius          = Shot.Config.MaxRadius
     self.cost               = Shot.Config.Cost
-    self.costEvent          = Game.Config.Events.ShotCost
+    self.shotEvent          = Game.Config.Events.Shot
     self.deactivationEvent  = Game.Config.Events.ShotDeactivated
     self.mode               = self.mode or Shot.Config.Mode
 end
@@ -213,7 +213,7 @@ function Shot:activate(x,y)
     self.progress   = 0
     self.scaleRate  = self:calcScaleRate()
     Events.trigger(self.soundEvent, self)
-    Events.trigger(self.costEvent,  self.cost)
+    Events.trigger(self.shotEvent)
 end
 
 --------------------

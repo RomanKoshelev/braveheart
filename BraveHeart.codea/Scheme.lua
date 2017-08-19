@@ -73,10 +73,14 @@ function Scheme:getBestShot     -- Best shot
 ------------------------------------------------------------------------------------------
 
 function Scheme:bindEvents()
-    Events.bind(Game.Config.Events.ShotCost,      self, Scheme.onShotCost)
+    Events.bind(Game.Config.Events.Shot,          self, Scheme.onShot)
     Events.bind(Game.Config.Events.Reset,         self, Scheme.onResetGame)
     Events.bind(Game.Config.Events.HeartIncrease, self, Scheme.onHeartIncrease)
     Events.bind(Game.Config.Events.HeartDecrease, self, Scheme.onHeartDecrease)
+end
+
+function Scheme:onShot(...)
+    return self:doOnShot(unpack({...}))
 end
 
 function Scheme:onShotCost(...)
@@ -123,12 +127,12 @@ function Scheme:doOnTick()
     self.sky:canUpdateStars     (not self.dragon:isStricken())
     self.heart:canUpdateIncrease(not self.dragon:isStricken())
     Events.trigger(self.heartNumEvent,   self.heartNum)
+    Events.trigger(self.shotNumEvent,    self.shotNum)
 end
 
-function Scheme:doOnShotCost(cost)
+function Scheme:doOnShot()
     self.shotNum = self.shotNum + 1
     Events.trigger(self.shotNumEvent, self.shotNum)
-    self:decreaseTotalScoreOnShot(cost)
     self:saveShotNum ()
 end
 
@@ -175,6 +179,7 @@ function Scheme:initConfig()
     self.bestShotEvent            = Game.Config.Events.BestShot
     self.bestShotSoundEvent       = Game.Config.Events.BestShotSound
     self.totalScoreEvent          = Game.Config.Events.TotalScore
+    self.shotEvent                = Game.Config.Events.Shot
     self.shotNumEvent             = Game.Config.Events.ShotNum
     self.dragonNumEvent           = Game.Config.Events.DragonNum
     self.heartNumEvent            = Game.Config.Events.HeartNum
