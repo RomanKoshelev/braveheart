@@ -37,9 +37,7 @@ Scheme.Config.Mode                         = Scheme.Mode.Hunting
 Scheme.Config.DefenceModeProbability       = 0.5
 Scheme.Config.Complexity                   = 0.0
 Scheme.Config.MaxFreeShotNum               = 3000
-Scheme.Config.MaxFreeHeartNum              = 3
-Scheme.Config.FreeShotBufferSize           = 10
-Scheme.Config.AddFreeShotAfterSec          = 3
+Scheme.Config.MaxFreeHeartNum              = 7
 
 
 ------------------------------------------------------------------------------------------
@@ -136,28 +134,12 @@ function Scheme:doOnTick()
     self:checkDragonShotStrike  ()
     self.sky:canUpdateStars     (not self.dragon:isStricken())
     self.heart:canUpdateIncrease(not self.dragon:isStricken())
-    self:updateFreeShotNum()
     self:calcCanFire()
-    Events.trigger(self.shotNumEvent,    self.shotNum)
+    Events.trigger(self.shotNumEvent, self.shotNum)
     Events.trigger(Game.Config.Events.CanFire, self.canFire)
     if (self.needUpdateHeatNum or true) then
         Events.trigger(self.heartNumEvent, self.heartNum)
         self.needUpdateHeatNum = false
-    end
-end
-
-function Scheme:updateFreeShotNum()
-    if Main.Config.FullVersion then
-        return
-    end
-    local minAdditionShot = Scheme.Config.MaxFreeShotNum - Scheme.Config.FreeShotBufferSize
-    if self.shotNum < minAdditionShot then
-        return
-    end
-    local duration = ElapsedTime - (self.prevFreeShotUpdate or 0)
-    if  duration > Scheme.Config.AddFreeShotAfterSec then
-        self.prevFreeShotUpdate = ElapsedTime
-        self.shotNum = math.max(self.shotNum - 1, minAdditionShot)
     end
 end
 

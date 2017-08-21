@@ -38,8 +38,6 @@ function UI:bindEvents()
     Events.bind(Game.Config.Events.HeartNum, self, UI.onHeartNum)
     Events.bind(Game.Config.Events.ShotNum, self, UI.onShotNum)
 end
-
-
 function UI:onHeartNum(...)
     self:doOnHeartNum(unpack({...}))
 end
@@ -184,7 +182,7 @@ function UI:doOnHeartNum(hn, x, y)
         self.newHeartX = x
         self.newHeartY = y
         self.newHeartAnimProgress = .01
-    elseif hn < self.heartNum then
+    elseif hn < self.heartNum and not self.stealNewHeart then
         self.oldHeartAnimProgress = .01
     end
     self.heartNum = hn
