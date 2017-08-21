@@ -57,8 +57,21 @@ function UI:doInit()
 end
 
 function UI:doOnTick()
-    self.newHeartAnimProgress = math.min(1, self.newHeartAnimProgress + .015)
+    self.stealNewHeart = not Main.Config.FullVersion and self.heartNum > Scheme.Config.MaxFreeHeartNum
+    local nd = self.stealNewHeart and .005 or .015
+    self.newHeartAnimProgress = math.min(1, self.newHeartAnimProgress + nd)
     self.oldHeartAnimProgress = math.min(1, self.oldHeartAnimProgress + .02)
+    
+    if self.stealNewHeart then
+        self.sendStolenEvent = self.sendStolenEvent or false
+        if not self.sendStolenEvent and self.newHeartAnimProgress> .1 then
+            self.sendStolenEvent = true
+        end
+        if self.sendStolenEvent and self.newHeartAnimProgress > .99 then
+            Events.trigger(Game.Config.Events.HeartStolen)
+            self.sendStolenEvent = false
+        end
+    end
 end
 
 function UI:doOnDraw()
@@ -84,7 +97,7 @@ function UI:drawHearts()
         dy = -(i*(i+1)%7)*2 * k
         if i== self.heartNum then
             self:drawLastHeart(x+s+(i-1)*d, y+dy, w, h)
-            else
+        else
             sprite("Small World:Heart Glow", x+s+(i-1)*d, y+dy, w, h)
         end
     end
@@ -92,6 +105,12 @@ end
 
 function UI:drawLastHeart(x2,y2,w2,h2)
     p = self.newHeartAnimProgress or 1
+    
+    if self.stealNewHeart then
+        x2 = 50
+        y2 = -50
+    end
+
     x1 = self.newHeartX or x2
     y1 = self.newHeartY or y2
     x = Calc.between(x1,x2,p)
@@ -105,13 +124,15 @@ end
 function UI:drawBuyButton()
     bc = color(0,0,0,120)
     tc = color(200, 200, 200, 120)
-    if self.shotNum == Scheme.Config.MaxFreeShotNum then
+    if self.shotNum > Scheme.Config.MaxFreeShotNum then
         bc = color(250,0,0,220)
         tc = color(255, 255, 0, 220)
-    elseif Scheme.Config.FreeShotBufferSize + self.shotNum > Scheme.Config.MaxFreeShotNum + 2 then
-        bc = color(250,250,0,180)
-        tc = color(255, 0, 0, 180)
     end
+    if self.heartNum > Scheme.Config.MaxFreeHeartNum and self.newHeartAnimProgress<1 then
+        bc = color(250,0,0,220)
+        tc = color(255, 255, 0, 220)
+    end
+
     pushStyle()
     pushMatrix()
         s = "BUY FULL VERSION"
@@ -163,7 +184,7 @@ function UI:doOnHeartNum(hn, x, y)
         self.newHeartX = x
         self.newHeartY = y
         self.newHeartAnimProgress = .01
-        elseif hn < self.heartNum then
+    elseif hn < self.heartNum then
         self.oldHeartAnimProgress = .01
     end
     self.heartNum = hn
@@ -184,6 +205,7 @@ function UI:initAttributes()
     self.newHeartY = 0
     self.newHeartAnimProgress = 1.
     self.oldHeartAnimProgress = 1.
+    self.stealNewHeart = false
 end
 
 

@@ -36,7 +36,8 @@ Scheme.Config.MaxHeartNum                  = 25 --25
 Scheme.Config.Mode                         = Scheme.Mode.Hunting
 Scheme.Config.DefenceModeProbability       = 0.5
 Scheme.Config.Complexity                   = 0.0
-Scheme.Config.MaxFreeShotNum               = 100
+Scheme.Config.MaxFreeShotNum               = 3000
+Scheme.Config.MaxFreeHeartNum              = 3
 Scheme.Config.FreeShotBufferSize           = 10
 Scheme.Config.AddFreeShotAfterSec          = 3
 
@@ -81,6 +82,7 @@ function Scheme:bindEvents()
     Events.bind(Game.Config.Events.Reset,         self, Scheme.onResetGame)
     Events.bind(Game.Config.Events.HeartIncrease, self, Scheme.onHeartIncrease)
     Events.bind(Game.Config.Events.HeartDecrease, self, Scheme.onHeartDecrease)
+    Events.bind(Game.Config.Events.HeartStolen,   self, Scheme.onHeartStolen)
 end
 
 function Scheme:onShot(...)
@@ -97,6 +99,10 @@ end
 
 function Scheme:onHeartDecrease(...)
     return self:doOnHeartDecrease(unpack({...}))
+end
+
+function Scheme:onHeartStolen(...)
+    return self:doOnHeartStolen(unpack({...}))
 end
 
 function Scheme:onResetGame(...)
@@ -132,9 +138,12 @@ function Scheme:doOnTick()
     self.heart:canUpdateIncrease(not self.dragon:isStricken())
     self:updateFreeShotNum()
     self:calcCanFire()
-    Events.trigger(self.heartNumEvent,   self.heartNum)
     Events.trigger(self.shotNumEvent,    self.shotNum)
     Events.trigger(Game.Config.Events.CanFire, self.canFire)
+    if (self.needUpdateHeatNum or true) then
+        Events.trigger(self.heartNumEvent, self.heartNum)
+        self.needUpdateHeatNum = false
+    end
 end
 
 function Scheme:updateFreeShotNum()
@@ -150,7 +159,6 @@ function Scheme:updateFreeShotNum()
         self.prevFreeShotUpdate = ElapsedTime
         self.shotNum = math.max(self.shotNum - 1, minAdditionShot)
     end
-
 end
 
 function Scheme:calcCanFire()
@@ -181,6 +189,13 @@ function Scheme:doOnHeartDecrease()
     self.heartNum = math.max(0,self.heartNum - 1)
     Events.trigger(self.heartNumEvent, self.heartNum, 0,0)
     self:saveHeartNum ()
+end
+
+function Scheme:doOnHeartStolen()
+    if not Main.Config.FullVersion then
+        self.heartNum = math.min(self.heartNum, Scheme.Config.MaxFreeHeartNum)
+        self:saveHeartNum ()
+    end
 end
 
 function Scheme:doOnResetGame()

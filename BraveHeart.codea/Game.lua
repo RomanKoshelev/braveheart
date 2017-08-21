@@ -32,6 +32,7 @@ Game.Config.Events.ShowRadar         = "Game.ShowRadar"
 Game.Config.Events.ShotDeactivated   = "Game.Shot.Deactivated"
 Game.Config.Events.HeartIncrease     = "Heart.Increase"
 Game.Config.Events.HeartDecrease     = "Heart.Decrease"
+Game.Config.Events.HeartStolen       = "Heart.Stolen"
 
 ------------------------------------------------------------------------------------------
 -- api
