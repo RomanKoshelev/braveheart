@@ -12,12 +12,14 @@ BraveHeart.ok = true
 -- config
 ------------------------------------------------------------------------------------------
 
-Main                    = {}
-Main.Config             = {}
-Main.Config.Name        = "Brave Heart"
-Main.Config.Description = "Help the Heart fight the Dragons"
-Main.Config.Domain      = "pgs"
-Main.Config.FullVersion = false
+Main                       = {}
+Main.Config                = {}
+Main.Config.Name           = "Brave Heart"
+Main.Config.Description    = "Help the Heart fight the Dragons"
+Main.Config.Domain         = "Roman Koshelev"
+Main.Config.FullVersion    = false
+Main.Config.FullVersionURL = 'http://www.ya.ru'
+
 
 ------------------------------------------------------------------------------------------
 -- main

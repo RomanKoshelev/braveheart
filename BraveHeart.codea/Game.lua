@@ -72,7 +72,9 @@ function Game:doOnTick()
 end
 
 function Game:doOnTouch(t)
-    self.stage:onTouch(t)
+    if not self.ui:onTouch(t) then
+        self.stage:onTouch(t)
+    end
 end
 
 function Game:doOnDraw()

@@ -30,6 +30,11 @@ function UI:onDraw
 (               -- called to draw all what needs
 )self:doOnDraw()end
 
+function UI:onTouch
+(               -- called to proc touching
+    touch       -- Codea Touch structure, contains info about touching
+)return self:doOnTouch(touch)end
+
 ---------------------------------------------------------------------
 -- events
 ------------------------------------------------------------------------------------------
@@ -56,7 +61,7 @@ end
 
 function UI:doOnTick()
     self.stealNewHeart = not Main.Config.FullVersion and self.heartNum > Scheme.Config.MaxFreeHeartNum
-    local nd = self.stealNewHeart and .005 or .015
+    local nd = self.stealNewHeart and .003 or .015
     self.newHeartAnimProgress = math.min(1, self.newHeartAnimProgress + nd)
     self.oldHeartAnimProgress = math.min(1, self.oldHeartAnimProgress + .02)
     
@@ -105,8 +110,8 @@ function UI:drawLastHeart(x2,y2,w2,h2)
     p = self.newHeartAnimProgress or 1
     
     if self.stealNewHeart then
-        x2 = 50
-        y2 = -50
+        x2 = 0
+        y2 = 0
     end
 
     x1 = self.newHeartX or x2
@@ -122,7 +127,7 @@ end
 function UI:drawBuyButton()
     bc = color(0,0,0,120)
     tc = color(200, 200, 200, 120)
-    if self.shotNum > Scheme.Config.MaxFreeShotNum then
+    if self.shotNum >= Scheme.Config.MaxFreeShotNum then
         bc = color(250,0,0,220)
         tc = color(255, 255, 0, 220)
     end
@@ -134,22 +139,36 @@ function UI:drawBuyButton()
     pushStyle()
     pushMatrix()
         s = "BUY FULL VERSION"
-        w = 240
-        h = 40
-        b = 5
-        x = b -- WIDTH-w-b
-        y = b -- HEIGHT-h-b
+        self.button_w = 260
+        self.button_h = 50
+        b = -1
+        self.button_x = b
+        self.button_y = b
         fill(bc)
         noStroke()
-        rect(x, y, w, h)
+        rect(self.button_x, self.button_y, self.button_w, self.button_h)
         textMode(CORNER)
         font("SourceSansPro-Bold")
-        fontSize(25)
+        fontSize(28)
         fill(tc)
         tw, th = textSize(s)
-        text(s, x+(w-tw)/2, y+(h-th)/2)
+        text(s, self.button_x+(self.button_w-tw)/2, self.button_y+(self.button_h-th)/2)
     popMatrix()
     popStyle()
+end
+
+function UI:doOnTouch(t)
+    if not Main.Config.FullVersion then
+        if t.state == BEGAN or t.state == MOVING then
+            if t.x > self.button_x and t.x < self.button_x+self.button_w then
+                if t.y > self.button_y and t.y < self.button_y+self.button_h then
+                    openURL(Main.Config.FullVersionURL)
+                    return true
+                end
+            end
+        end
+    end
+    return false
 end
 
 function UI:drawFreePanel()
