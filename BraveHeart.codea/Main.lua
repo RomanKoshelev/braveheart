@@ -18,7 +18,7 @@ Main.Config.Name           = "Brave Heart"
 Main.Config.Description    = "Help the Heart fight the Dragons"
 Main.Config.Domain         = "Roman Koshelev"
 Main.Config.FullVersion    = false
-Main.Config.FullVersionURL = 'http://www.ya.ru'
+Main.Config.FullVersionURL = 'https://itunes.apple.com/ru/app/paint/id513926822?l=en&mt=8'
 
 
 ------------------------------------------------------------------------------------------
