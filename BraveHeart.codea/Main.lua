@@ -28,6 +28,7 @@ Main.Config.FullVersionURL = 'http://www.ya.ru'
 local app
 
 displayMode (FULLSCREEN_NO_BUTTONS)
+sound("A Hero's Quest:Level Up")
 
 function setup()
     app=App(
