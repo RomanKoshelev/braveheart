@@ -496,7 +496,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RomanKoshelev.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Brave Heart";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -524,7 +524,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RomanKoshelev.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Brave Heart";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
