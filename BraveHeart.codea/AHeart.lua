@@ -13,8 +13,8 @@ AHeart -- represents silly heart at the game's stage
 --------------------
 
 AHeart.Config                = {}
-AHeart.Config.SpriteSizeRate = 1.0
-AHeart.Config.Sprite         = "Small World:Heart"
+AHeart.Config.SpriteSizeRate = 1.4
+AHeart.Config.Sprite         = "Small World:Heart 2"
 AHeart.Config.IncreaseSprite = "Small World:Mote Happy"
 
 ------------------------------------------------------------------------------------------
