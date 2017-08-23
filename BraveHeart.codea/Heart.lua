@@ -232,7 +232,7 @@ function Heart:onDestroyed()
     self:deactivate()
     sound("A Hero's Quest:Monster Noise 3")
     tween.delay(0.5,function() 
-        sound("Game Sounds One:Crowd Sad") end)
+        sound("Game Sounds One:Crowd Sad 2") end)
 end
 
 function Heart:deactivate()
@@ -251,7 +251,7 @@ function Heart:activate()
     self.x             = 0
     self.y             = HEIGHT
     tween.delay(0.5,function() 
-        sound("Game Sounds One:Crowd Cheer") end)
+        sound("Game Sounds One:Crowd Cheer 2") end)
     Events.trigger(self.decreaseEvent)
 end
 
