@@ -51,55 +51,10 @@
 		CF24EE111F508A2F00BF3B97 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A216F2E859005F87A6 /* SourceSansPro-Regular.otf */; };
 		CF24EE121F508A2F00BF3B97 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */; };
 		CF24EE131F508A2F00BF3B97 /* BraveHeart.codea in Resources */ = {isa = PBXBuildFile; fileRef = DB8A015B16F73DFF005F87A6 /* BraveHeart.codea */; };
-		CFB053401F3E3061006E00AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0DC0AD18C459EC005F4723 /* Images.xcassets */; };
-		DB0DC0B618C46085005F4723 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B518C46085005F4723 /* CoreImage.framework */; };
-		DB0DC0B818C4608A005F4723 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B718C4608A005F4723 /* CoreLocation.framework */; };
-		DB0DC0BA18C4608E005F4723 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B918C4608E005F4723 /* Accelerate.framework */; };
-		DB3B3F6317815CFE00A992DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3B3F6217815CFE00A992DB /* Security.framework */; };
-		DB5E404418CD80570001CC1F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5E404318CD80570001CC1F /* Social.framework */; };
-		DB6F5AB81E9287F4003CDC92 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F5AB71E9287F4003CDC92 /* Assets */; };
-		DB8A004716F2DBDA005F87A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004616F2DBDA005F87A6 /* UIKit.framework */; };
-		DB8A004916F2DBDA005F87A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004816F2DBDA005F87A6 /* Foundation.framework */; };
-		DB8A004B16F2DBDA005F87A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004A16F2DBDA005F87A6 /* CoreGraphics.framework */; };
-		DB8A005116F2DBDA005F87A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB8A004F16F2DBDA005F87A6 /* InfoPlist.strings */; };
-		DB8A005316F2DBDA005F87A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8A005216F2DBDA005F87A6 /* main.m */; };
-		DB8A005716F2DBDA005F87A6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB8A005616F2DBDA005F87A6 /* AppDelegate.mm */; };
-		DB8A006816F2E019005F87A6 /* libcodea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006316F2E019005F87A6 /* libcodea.a */; };
-		DB8A006A16F2E019005F87A6 /* libtools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006516F2E019005F87A6 /* libtools.a */; };
-		DB8A006B16F2E019005F87A6 /* RuntimeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB8A006616F2E019005F87A6 /* RuntimeResources.bundle */; };
-		DB8A006C16F2E019005F87A6 /* ToolsResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB8A006716F2E019005F87A6 /* ToolsResources.bundle */; };
-		DB8A006F16F2E039005F87A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006E16F2E039005F87A6 /* QuartzCore.framework */; };
-		DB8A007116F2E069005F87A6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007016F2E069005F87A6 /* CoreMotion.framework */; };
-		DB8A007516F2E073005F87A6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007416F2E073005F87A6 /* libicucore.dylib */; };
-		DB8A007716F2E084005F87A6 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007616F2E084005F87A6 /* OpenAL.framework */; };
-		DB8A007916F2E089005F87A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007816F2E089005F87A6 /* AudioToolbox.framework */; };
-		DB8A007B16F2E096005F87A6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007A16F2E096005F87A6 /* AVFoundation.framework */; };
-		DB8A007D16F2E09A005F87A6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007C16F2E09A005F87A6 /* CoreVideo.framework */; };
-		DB8A007F16F2E09E005F87A6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007E16F2E09E005F87A6 /* AssetsLibrary.framework */; };
-		DB8A008116F2E0A7005F87A6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008016F2E0A7005F87A6 /* libz.dylib */; };
-		DB8A008316F2E0B0005F87A6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008216F2E0B0005F87A6 /* MobileCoreServices.framework */; };
-		DB8A008516F2E0B9005F87A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008416F2E0B9005F87A6 /* SystemConfiguration.framework */; };
-		DB8A008716F2E0BE005F87A6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008616F2E0BE005F87A6 /* CFNetwork.framework */; };
-		DB8A008916F2E0C3005F87A6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008816F2E0C3005F87A6 /* CoreText.framework */; };
-		DB8A008B16F2E0CF005F87A6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008A16F2E0CF005F87A6 /* GLKit.framework */; };
-		DB8A008D16F2E0D3005F87A6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008C16F2E0D3005F87A6 /* OpenGLES.framework */; };
-		DB8A009216F2E497005F87A6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A009116F2E497005F87A6 /* CoreMedia.framework */; };
-		DB8A00A416F2E859005F87A6 /* Inconsolata.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A016F2E859005F87A6 /* Inconsolata.otf */; };
-		DB8A00A516F2E859005F87A6 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A116F2E859005F87A6 /* SourceSansPro-Bold.otf */; };
-		DB8A00A616F2E859005F87A6 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A216F2E859005F87A6 /* SourceSansPro-Regular.otf */; };
-		DB8A00A716F2E859005F87A6 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */; };
-		DB8A015C16F73DFF005F87A6 /* BraveHeart.codea in Resources */ = {isa = PBXBuildFile; fileRef = DB8A015B16F73DFF005F87A6 /* BraveHeart.codea */; };
-		DBC21B9719EBF2B000CD519E /* CodeaAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC21B9619EBF2B000CD519E /* CodeaAddon.m */; };
-		DBC21B9C19ED75A000CD519E /* GameCenterAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCE375F19E9F77800E382EC /* GameCenterAddon.m */; };
-		DBCE376219E9F82D00E382EC /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCE376119E9F82D00E382EC /* GameKit.framework */; };
-		DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE0BEA21A8B693D0010DC06 /* iAd.framework */; };
-		DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */; };
-		DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF24EE171F508A2F00BF3B97 /* HeartDragons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartDragons.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF24EE181F508A3100BF3B97 /* BraveHeart copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BraveHeart copy-Info.plist"; path = "/Users/romankoshelev/prj/BraveHeart/BraveHeart copy-Info.plist"; sourceTree = "<absolute>"; };
 		DB0DC0AD18C459EC005F4723 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DB0DC0B518C46085005F4723 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		DB0DC0B718C4608A005F4723 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -107,7 +62,6 @@
 		DB3B3F6217815CFE00A992DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DB5E404318CD80570001CC1F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		DB6F5AB71E9287F4003CDC92 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = SOURCE_ROOT; };
-		DB8A004316F2DBDA005F87A6 /* BraveHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = BraveHeart.app; path = "Brave Heart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8A004616F2DBDA005F87A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB8A004816F2DBDA005F87A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB8A004A16F2DBDA005F87A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -196,41 +150,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB8A004016F2DBDA005F87A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */,
-				DBCE376219E9F82D00E382EC /* GameKit.framework in Frameworks */,
-				DB5E404418CD80570001CC1F /* Social.framework in Frameworks */,
-				DB0DC0BA18C4608E005F4723 /* Accelerate.framework in Frameworks */,
-				DB0DC0B818C4608A005F4723 /* CoreLocation.framework in Frameworks */,
-				DB0DC0B618C46085005F4723 /* CoreImage.framework in Frameworks */,
-				DB3B3F6317815CFE00A992DB /* Security.framework in Frameworks */,
-				DB8A009216F2E497005F87A6 /* CoreMedia.framework in Frameworks */,
-				DB8A008D16F2E0D3005F87A6 /* OpenGLES.framework in Frameworks */,
-				DB8A008B16F2E0CF005F87A6 /* GLKit.framework in Frameworks */,
-				DB8A008916F2E0C3005F87A6 /* CoreText.framework in Frameworks */,
-				DB8A008716F2E0BE005F87A6 /* CFNetwork.framework in Frameworks */,
-				DB8A008516F2E0B9005F87A6 /* SystemConfiguration.framework in Frameworks */,
-				DB8A008316F2E0B0005F87A6 /* MobileCoreServices.framework in Frameworks */,
-				DB8A004B16F2DBDA005F87A6 /* CoreGraphics.framework in Frameworks */,
-				DB8A008116F2E0A7005F87A6 /* libz.dylib in Frameworks */,
-				DB8A007F16F2E09E005F87A6 /* AssetsLibrary.framework in Frameworks */,
-				DB8A007D16F2E09A005F87A6 /* CoreVideo.framework in Frameworks */,
-				DB8A007B16F2E096005F87A6 /* AVFoundation.framework in Frameworks */,
-				DB8A007916F2E089005F87A6 /* AudioToolbox.framework in Frameworks */,
-				DB8A007716F2E084005F87A6 /* OpenAL.framework in Frameworks */,
-				DB8A007516F2E073005F87A6 /* libicucore.dylib in Frameworks */,
-				DB8A007116F2E069005F87A6 /* CoreMotion.framework in Frameworks */,
-				DB8A006F16F2E039005F87A6 /* QuartzCore.framework in Frameworks */,
-				DB8A004716F2DBDA005F87A6 /* UIKit.framework in Frameworks */,
-				DB8A004916F2DBDA005F87A6 /* Foundation.framework in Frameworks */,
-				DB8A006816F2E019005F87A6 /* libcodea.a in Frameworks */,
-				DB8A006A16F2E019005F87A6 /* libtools.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -241,14 +160,12 @@
 				DB8A004C16F2DBDA005F87A6 /* BraveHeart */,
 				DB8A004516F2DBDA005F87A6 /* Frameworks */,
 				DB8A004416F2DBDA005F87A6 /* Products */,
-				CF24EE181F508A3100BF3B97 /* BraveHeart copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		DB8A004416F2DBDA005F87A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB8A004316F2DBDA005F87A6 /* BraveHeart.app */,
 				CF24EE171F508A2F00BF3B97 /* HeartDragons.app */,
 			);
 			name = Products;
@@ -385,24 +302,6 @@
 			productReference = CF24EE171F508A2F00BF3B97 /* HeartDragons.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DB8A004216F2DBDA005F87A6 /* BraveHeart */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB8A006016F2DBDA005F87A6 /* Build configuration list for PBXNativeTarget "BraveHeart" */;
-			buildPhases = (
-				DB8A00BC16F551C4005F87A6 /* ShellScript */,
-				DB8A003F16F2DBDA005F87A6 /* Sources */,
-				DB8A004016F2DBDA005F87A6 /* Frameworks */,
-				DB8A004116F2DBDA005F87A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BraveHeart;
-			productName = BraveHeart;
-			productReference = DB8A004316F2DBDA005F87A6 /* BraveHeart.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -413,9 +312,6 @@
 				ORGANIZATIONNAME = MyCompany;
 				TargetAttributes = {
 					CF24EDE31F508A2F00BF3B97 = {
-						DevelopmentTeam = N9KG836PWZ;
-					};
-					DB8A004216F2DBDA005F87A6 = {
 						DevelopmentTeam = N9KG836PWZ;
 					};
 				};
@@ -432,7 +328,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB8A004216F2DBDA005F87A6 /* BraveHeart */,
 				CF24EDE31F508A2F00BF3B97 /* HeartDragons */,
 			);
 		};
@@ -457,41 +352,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB8A004116F2DBDA005F87A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB8A005116F2DBDA005F87A6 /* InfoPlist.strings in Resources */,
-				DB8A006B16F2E019005F87A6 /* RuntimeResources.bundle in Resources */,
-				DB8A006C16F2E019005F87A6 /* ToolsResources.bundle in Resources */,
-				DB8A00A416F2E859005F87A6 /* Inconsolata.otf in Resources */,
-				CFB053401F3E3061006E00AE /* Images.xcassets in Resources */,
-				DB8A00A516F2E859005F87A6 /* SourceSansPro-Bold.otf in Resources */,
-				DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */,
-				DB6F5AB81E9287F4003CDC92 /* Assets in Resources */,
-				DB8A00A616F2E859005F87A6 /* SourceSansPro-Regular.otf in Resources */,
-				DB8A00A716F2E859005F87A6 /* SourceSansPro-Semibold.otf in Resources */,
-				DB8A015C16F73DFF005F87A6 /* BraveHeart.codea in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		CF24EDE41F508A2F00BF3B97 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "MVERS=`cat libversion`\n\necho \"note: building against lib version $MVERS.\"\n\nif [ ! -f \"$PROJECT_DIR/Libs/libcodea.a\" ]\nthen\n    echo \"note: Downloading Codea Library...\"\n    curl -o \"$PROJECT_DIR/Libs/libcodea.a.gz\" \"https://codea.io/lib/libcodea-$MVERS.a.gz\"\n\n    if [[ $? == 0 ]]\n    then\n        gunzip \"$PROJECT_DIR/Libs/libcodea.a.gz\"\n    else\n        echo \"error: Failed to Download Codea Library. Please ensure you have an active Internet connection.\"\n        return 1\n    fi\nfi\n\nif [ ! -f \"$PROJECT_DIR/Libs/libtools.a\" ]\nthen\n    echo \"note: Downloading Tools Library...\"\n    curl -o \"$PROJECT_DIR/Libs/libtools.a.gz\" \"https://codea.io/lib/libtools-$MVERS.a.gz\"\n\n    if [[ $? == 0 ]]\n    then\n        gunzip \"$PROJECT_DIR/Libs/libtools.a.gz\"\n    else\n        echo \"error: Failed to Download Tools Library. Please ensure you have an active Internet connection.\"\n        return 1\n    fi\nfi\n\n\n\n";
-		};
-		DB8A00BC16F551C4005F87A6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,18 +380,6 @@
 				CF24EDE81F508A2F00BF3B97 /* iAdsAddon.m in Sources */,
 				CF24EDE91F508A2F00BF3B97 /* main.m in Sources */,
 				CF24EDEA1F508A2F00BF3B97 /* AppDelegate.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB8A003F16F2DBDA005F87A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBC21B9719EBF2B000CD519E /* CodeaAddon.m in Sources */,
-				DBC21B9C19ED75A000CD519E /* GameCenterAddon.m in Sources */,
-				DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */,
-				DB8A005316F2DBDA005F87A6 /* main.m in Sources */,
-				DB8A005716F2DBDA005F87A6 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,62 +531,6 @@
 			};
 			name = Release;
 		};
-		DB8A006116F2DBDA005F87A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N9KG836PWZ;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BraveHeart/BraveHeart-Prefix.pch";
-				INFOPLIST_FILE = "BraveHeart/BraveHeart-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Libs\"",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.RomanKoshelev.heartdragons;
-				PRODUCT_NAME = "Brave Heart";
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		DB8A006216F2DBDA005F87A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N9KG836PWZ;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BraveHeart/BraveHeart-Prefix.pch";
-				INFOPLIST_FILE = "BraveHeart/BraveHeart-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Libs\"",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.RomanKoshelev.heartdragons;
-				PRODUCT_NAME = "Brave Heart";
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -752,15 +548,6 @@
 			buildConfigurations = (
 				DB8A005E16F2DBDA005F87A6 /* Debug */,
 				DB8A005F16F2DBDA005F87A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB8A006016F2DBDA005F87A6 /* Build configuration list for PBXNativeTarget "BraveHeart" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB8A006116F2DBDA005F87A6 /* Debug */,
-				DB8A006216F2DBDA005F87A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
