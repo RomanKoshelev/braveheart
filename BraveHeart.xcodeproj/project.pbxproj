@@ -7,6 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF24EDE61F508A2F00BF3B97 /* CodeaAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC21B9619EBF2B000CD519E /* CodeaAddon.m */; };
+		CF24EDE71F508A2F00BF3B97 /* GameCenterAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCE375F19E9F77800E382EC /* GameCenterAddon.m */; };
+		CF24EDE81F508A2F00BF3B97 /* iAdsAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */; };
+		CF24EDE91F508A2F00BF3B97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8A005216F2DBDA005F87A6 /* main.m */; };
+		CF24EDEA1F508A2F00BF3B97 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB8A005616F2DBDA005F87A6 /* AppDelegate.mm */; };
+		CF24EDEC1F508A2F00BF3B97 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE0BEA21A8B693D0010DC06 /* iAd.framework */; };
+		CF24EDED1F508A2F00BF3B97 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCE376119E9F82D00E382EC /* GameKit.framework */; };
+		CF24EDEE1F508A2F00BF3B97 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5E404318CD80570001CC1F /* Social.framework */; };
+		CF24EDEF1F508A2F00BF3B97 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B918C4608E005F4723 /* Accelerate.framework */; };
+		CF24EDF01F508A2F00BF3B97 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B718C4608A005F4723 /* CoreLocation.framework */; };
+		CF24EDF11F508A2F00BF3B97 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B518C46085005F4723 /* CoreImage.framework */; };
+		CF24EDF21F508A2F00BF3B97 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3B3F6217815CFE00A992DB /* Security.framework */; };
+		CF24EDF31F508A2F00BF3B97 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A009116F2E497005F87A6 /* CoreMedia.framework */; };
+		CF24EDF41F508A2F00BF3B97 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008C16F2E0D3005F87A6 /* OpenGLES.framework */; };
+		CF24EDF51F508A2F00BF3B97 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008A16F2E0CF005F87A6 /* GLKit.framework */; };
+		CF24EDF61F508A2F00BF3B97 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008816F2E0C3005F87A6 /* CoreText.framework */; };
+		CF24EDF71F508A2F00BF3B97 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008616F2E0BE005F87A6 /* CFNetwork.framework */; };
+		CF24EDF81F508A2F00BF3B97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008416F2E0B9005F87A6 /* SystemConfiguration.framework */; };
+		CF24EDF91F508A2F00BF3B97 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008216F2E0B0005F87A6 /* MobileCoreServices.framework */; };
+		CF24EDFA1F508A2F00BF3B97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004A16F2DBDA005F87A6 /* CoreGraphics.framework */; };
+		CF24EDFB1F508A2F00BF3B97 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A008016F2E0A7005F87A6 /* libz.dylib */; };
+		CF24EDFC1F508A2F00BF3B97 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007E16F2E09E005F87A6 /* AssetsLibrary.framework */; };
+		CF24EDFD1F508A2F00BF3B97 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007C16F2E09A005F87A6 /* CoreVideo.framework */; };
+		CF24EDFE1F508A2F00BF3B97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007A16F2E096005F87A6 /* AVFoundation.framework */; };
+		CF24EDFF1F508A2F00BF3B97 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007816F2E089005F87A6 /* AudioToolbox.framework */; };
+		CF24EE001F508A2F00BF3B97 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007616F2E084005F87A6 /* OpenAL.framework */; };
+		CF24EE011F508A2F00BF3B97 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007416F2E073005F87A6 /* libicucore.dylib */; };
+		CF24EE021F508A2F00BF3B97 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A007016F2E069005F87A6 /* CoreMotion.framework */; };
+		CF24EE031F508A2F00BF3B97 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006E16F2E039005F87A6 /* QuartzCore.framework */; };
+		CF24EE041F508A2F00BF3B97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004616F2DBDA005F87A6 /* UIKit.framework */; };
+		CF24EE051F508A2F00BF3B97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004816F2DBDA005F87A6 /* Foundation.framework */; };
+		CF24EE061F508A2F00BF3B97 /* libcodea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006316F2E019005F87A6 /* libcodea.a */; };
+		CF24EE071F508A2F00BF3B97 /* libtools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A006516F2E019005F87A6 /* libtools.a */; };
+		CF24EE091F508A2F00BF3B97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB8A004F16F2DBDA005F87A6 /* InfoPlist.strings */; };
+		CF24EE0A1F508A2F00BF3B97 /* RuntimeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB8A006616F2E019005F87A6 /* RuntimeResources.bundle */; };
+		CF24EE0B1F508A2F00BF3B97 /* ToolsResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB8A006716F2E019005F87A6 /* ToolsResources.bundle */; };
+		CF24EE0C1F508A2F00BF3B97 /* Inconsolata.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A016F2E859005F87A6 /* Inconsolata.otf */; };
+		CF24EE0D1F508A2F00BF3B97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0DC0AD18C459EC005F4723 /* Images.xcassets */; };
+		CF24EE0E1F508A2F00BF3B97 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A116F2E859005F87A6 /* SourceSansPro-Bold.otf */; };
+		CF24EE0F1F508A2F00BF3B97 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */; };
+		CF24EE101F508A2F00BF3B97 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F5AB71E9287F4003CDC92 /* Assets */; };
+		CF24EE111F508A2F00BF3B97 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A216F2E859005F87A6 /* SourceSansPro-Regular.otf */; };
+		CF24EE121F508A2F00BF3B97 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */; };
+		CF24EE131F508A2F00BF3B97 /* BraveHeart.codea in Resources */ = {isa = PBXBuildFile; fileRef = DB8A015B16F73DFF005F87A6 /* BraveHeart.codea */; };
 		CFB053401F3E3061006E00AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0DC0AD18C459EC005F4723 /* Images.xcassets */; };
 		DB0DC0B618C46085005F4723 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B518C46085005F4723 /* CoreImage.framework */; };
 		DB0DC0B818C4608A005F4723 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B718C4608A005F4723 /* CoreLocation.framework */; };
@@ -54,6 +98,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF24EE171F508A2F00BF3B97 /* HeartDragons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartDragons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF24EE181F508A3100BF3B97 /* BraveHeart copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BraveHeart copy-Info.plist"; path = "/Users/romankoshelev/prj/BraveHeart/BraveHeart copy-Info.plist"; sourceTree = "<absolute>"; };
 		DB0DC0AD18C459EC005F4723 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DB0DC0B518C46085005F4723 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		DB0DC0B718C4608A005F4723 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -61,7 +107,7 @@
 		DB3B3F6217815CFE00A992DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DB5E404318CD80570001CC1F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		DB6F5AB71E9287F4003CDC92 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = SOURCE_ROOT; };
-		DB8A004316F2DBDA005F87A6 /* BraveHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB8A004316F2DBDA005F87A6 /* BraveHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = BraveHeart.app; path = "Brave Heart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8A004616F2DBDA005F87A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB8A004816F2DBDA005F87A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB8A004A16F2DBDA005F87A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +161,41 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF24EDEB1F508A2F00BF3B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF24EDEC1F508A2F00BF3B97 /* iAd.framework in Frameworks */,
+				CF24EDED1F508A2F00BF3B97 /* GameKit.framework in Frameworks */,
+				CF24EDEE1F508A2F00BF3B97 /* Social.framework in Frameworks */,
+				CF24EDEF1F508A2F00BF3B97 /* Accelerate.framework in Frameworks */,
+				CF24EDF01F508A2F00BF3B97 /* CoreLocation.framework in Frameworks */,
+				CF24EDF11F508A2F00BF3B97 /* CoreImage.framework in Frameworks */,
+				CF24EDF21F508A2F00BF3B97 /* Security.framework in Frameworks */,
+				CF24EDF31F508A2F00BF3B97 /* CoreMedia.framework in Frameworks */,
+				CF24EDF41F508A2F00BF3B97 /* OpenGLES.framework in Frameworks */,
+				CF24EDF51F508A2F00BF3B97 /* GLKit.framework in Frameworks */,
+				CF24EDF61F508A2F00BF3B97 /* CoreText.framework in Frameworks */,
+				CF24EDF71F508A2F00BF3B97 /* CFNetwork.framework in Frameworks */,
+				CF24EDF81F508A2F00BF3B97 /* SystemConfiguration.framework in Frameworks */,
+				CF24EDF91F508A2F00BF3B97 /* MobileCoreServices.framework in Frameworks */,
+				CF24EDFA1F508A2F00BF3B97 /* CoreGraphics.framework in Frameworks */,
+				CF24EDFB1F508A2F00BF3B97 /* libz.dylib in Frameworks */,
+				CF24EDFC1F508A2F00BF3B97 /* AssetsLibrary.framework in Frameworks */,
+				CF24EDFD1F508A2F00BF3B97 /* CoreVideo.framework in Frameworks */,
+				CF24EDFE1F508A2F00BF3B97 /* AVFoundation.framework in Frameworks */,
+				CF24EDFF1F508A2F00BF3B97 /* AudioToolbox.framework in Frameworks */,
+				CF24EE001F508A2F00BF3B97 /* OpenAL.framework in Frameworks */,
+				CF24EE011F508A2F00BF3B97 /* libicucore.dylib in Frameworks */,
+				CF24EE021F508A2F00BF3B97 /* CoreMotion.framework in Frameworks */,
+				CF24EE031F508A2F00BF3B97 /* QuartzCore.framework in Frameworks */,
+				CF24EE041F508A2F00BF3B97 /* UIKit.framework in Frameworks */,
+				CF24EE051F508A2F00BF3B97 /* Foundation.framework in Frameworks */,
+				CF24EE061F508A2F00BF3B97 /* libcodea.a in Frameworks */,
+				CF24EE071F508A2F00BF3B97 /* libtools.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB8A004016F2DBDA005F87A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +241,7 @@
 				DB8A004C16F2DBDA005F87A6 /* BraveHeart */,
 				DB8A004516F2DBDA005F87A6 /* Frameworks */,
 				DB8A004416F2DBDA005F87A6 /* Products */,
+				CF24EE181F508A3100BF3B97 /* BraveHeart copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				DB8A004316F2DBDA005F87A6 /* BraveHeart.app */,
+				CF24EE171F508A2F00BF3B97 /* HeartDragons.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,6 +367,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CF24EDE31F508A2F00BF3B97 /* HeartDragons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF24EE141F508A2F00BF3B97 /* Build configuration list for PBXNativeTarget "HeartDragons" */;
+			buildPhases = (
+				CF24EDE41F508A2F00BF3B97 /* ShellScript */,
+				CF24EDE51F508A2F00BF3B97 /* Sources */,
+				CF24EDEB1F508A2F00BF3B97 /* Frameworks */,
+				CF24EE081F508A2F00BF3B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartDragons;
+			productName = BraveHeart;
+			productReference = CF24EE171F508A2F00BF3B97 /* HeartDragons.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DB8A004216F2DBDA005F87A6 /* BraveHeart */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB8A006016F2DBDA005F87A6 /* Build configuration list for PBXNativeTarget "BraveHeart" */;
@@ -311,6 +412,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = MyCompany;
 				TargetAttributes = {
+					CF24EDE31F508A2F00BF3B97 = {
+						DevelopmentTeam = N9KG836PWZ;
+					};
 					DB8A004216F2DBDA005F87A6 = {
 						DevelopmentTeam = N9KG836PWZ;
 					};
@@ -329,11 +433,30 @@
 			projectRoot = "";
 			targets = (
 				DB8A004216F2DBDA005F87A6 /* BraveHeart */,
+				CF24EDE31F508A2F00BF3B97 /* HeartDragons */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF24EE081F508A2F00BF3B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF24EE091F508A2F00BF3B97 /* InfoPlist.strings in Resources */,
+				CF24EE0A1F508A2F00BF3B97 /* RuntimeResources.bundle in Resources */,
+				CF24EE0B1F508A2F00BF3B97 /* ToolsResources.bundle in Resources */,
+				CF24EE0C1F508A2F00BF3B97 /* Inconsolata.otf in Resources */,
+				CF24EE0D1F508A2F00BF3B97 /* Images.xcassets in Resources */,
+				CF24EE0E1F508A2F00BF3B97 /* SourceSansPro-Bold.otf in Resources */,
+				CF24EE0F1F508A2F00BF3B97 /* Launch Screen.storyboard in Resources */,
+				CF24EE101F508A2F00BF3B97 /* Assets in Resources */,
+				CF24EE111F508A2F00BF3B97 /* SourceSansPro-Regular.otf in Resources */,
+				CF24EE121F508A2F00BF3B97 /* SourceSansPro-Semibold.otf in Resources */,
+				CF24EE131F508A2F00BF3B97 /* BraveHeart.codea in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB8A004116F2DBDA005F87A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +478,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		CF24EDE41F508A2F00BF3B97 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MVERS=`cat libversion`\n\necho \"note: building against lib version $MVERS.\"\n\nif [ ! -f \"$PROJECT_DIR/Libs/libcodea.a\" ]\nthen\n    echo \"note: Downloading Codea Library...\"\n    curl -o \"$PROJECT_DIR/Libs/libcodea.a.gz\" \"https://codea.io/lib/libcodea-$MVERS.a.gz\"\n\n    if [[ $? == 0 ]]\n    then\n        gunzip \"$PROJECT_DIR/Libs/libcodea.a.gz\"\n    else\n        echo \"error: Failed to Download Codea Library. Please ensure you have an active Internet connection.\"\n        return 1\n    fi\nfi\n\nif [ ! -f \"$PROJECT_DIR/Libs/libtools.a\" ]\nthen\n    echo \"note: Downloading Tools Library...\"\n    curl -o \"$PROJECT_DIR/Libs/libtools.a.gz\" \"https://codea.io/lib/libtools-$MVERS.a.gz\"\n\n    if [[ $? == 0 ]]\n    then\n        gunzip \"$PROJECT_DIR/Libs/libtools.a.gz\"\n    else\n        echo \"error: Failed to Download Tools Library. Please ensure you have an active Internet connection.\"\n        return 1\n    fi\nfi\n\n\n\n";
+		};
 		DB8A00BC16F551C4005F87A6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +507,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF24EDE51F508A2F00BF3B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF24EDE61F508A2F00BF3B97 /* CodeaAddon.m in Sources */,
+				CF24EDE71F508A2F00BF3B97 /* GameCenterAddon.m in Sources */,
+				CF24EDE81F508A2F00BF3B97 /* iAdsAddon.m in Sources */,
+				CF24EDE91F508A2F00BF3B97 /* main.m in Sources */,
+				CF24EDEA1F508A2F00BF3B97 /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB8A003F16F2DBDA005F87A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +545,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF24EE151F508A2F00BF3B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N9KG836PWZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BraveHeart/BraveHeart-Prefix.pch";
+				INFOPLIST_FILE = "BraveHeart/BraveHeart-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RomanKoshelev.heartdragons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF24EE161F508A2F00BF3B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N9KG836PWZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BraveHeart/BraveHeart-Prefix.pch";
+				INFOPLIST_FILE = "BraveHeart/BraveHeart-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RomanKoshelev.heartdragons;
+				PRODUCT_NAME = "Heart & Dragons";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		DB8A005E16F2DBDA005F87A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -495,7 +699,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.RomanKoshelev.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RomanKoshelev.heartdragons;
 				PRODUCT_NAME = "Brave Heart";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,7 +727,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.RomanKoshelev.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RomanKoshelev.heartdragons;
 				PRODUCT_NAME = "Brave Heart";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,6 +738,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF24EE141F508A2F00BF3B97 /* Build configuration list for PBXNativeTarget "HeartDragons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF24EE151F508A2F00BF3B97 /* Debug */,
+				CF24EE161F508A2F00BF3B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DB8A003E16F2DBDA005F87A6 /* Build configuration list for PBXProject "BraveHeart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
