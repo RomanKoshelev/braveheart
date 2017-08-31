@@ -36,7 +36,7 @@ Scheme.Config.MaxHeartNum                  = 25 --25
 Scheme.Config.Mode                         = Scheme.Mode.Hunting
 Scheme.Config.DefenceModeProbability       = 0.5
 Scheme.Config.Complexity                   = 0.0
-Scheme.Config.MaxFreeShotNum               = 3000 --3000
+Scheme.Config.MaxFreeShotNum               = 5000 --3000
 Scheme.Config.MaxFreeHeartNum              = 12 --12
 
 

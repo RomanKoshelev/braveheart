@@ -71,7 +71,7 @@ function Framerate:doSetDrawParams(f,c,s)
 end
 
 function Framerate:doOnDraw()
-    self:defaultDraw()
+    -- self:defaultDraw()
 end
 
 ------------------------------------------------------------------------------------------

@@ -13,7 +13,7 @@ Sky -- Game-scheme's element that generates and controls stars
 --------------------
 
 Sky.Config                 = {}
-Sky.Config.MaxStarNum      = 64
+Sky.Config.MaxStarNum      = 32
 
 ------------------------------------------------------------------------------------------
 -- api
